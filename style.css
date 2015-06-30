@@ -1,15 +1,6 @@
 /*Body*/
 { margin: 0; padding: 0; }
 body{background: yellow;}
-html{
-  position:relative; 
-  min-height: 100%;
-}
-/*Normalize html and body elements,this style is just good to have*/
-html,body{
-  margin:0;
-  padding:0;
-}
 /*Headers*/
 #page-wrap { width: 50%; margin: 100px auto; }
 /*h1, h2, h3, h4 p { margin: 20px 0; }*/
@@ -70,4 +61,13 @@ padding-top:3px;
 padding-bottom:3px;
 padding-right:3px;
 padding-left:3px;
+}
+html{
+  position:relative; 
+  min-height: 100%;
+}
+/*Normalize html and body elements,this style is just good to have*/
+html,body{
+  margin:0;
+  padding:0;
 }
