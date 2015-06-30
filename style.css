@@ -1,6 +1,8 @@
 /*Body*/
 body{background: yellow;}
 /*Headers*/
+#page-wrap { width: 50%; margin: 100px auto; }
+/*h1, h2, h3, h4 p { margin: 20px 0; }*/
 h1
 {
 color: #FFFFFF;
@@ -49,4 +51,13 @@ padding-top:20px;
 padding-bottom:20px;
 padding-right:20px;
 padding-left:20px;
+}
+button{
+color: #FF0000;  
+background-color: #FF1493;
+text-align: center;
+padding-top:3px;
+padding-bottom:3px;
+padding-right:3px;
+padding-left:3px;
 }
