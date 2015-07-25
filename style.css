@@ -1,5 +1,13 @@
 /*Body*/
-body{background: yellow;}
+body{background: yellow;
+    text-align: center;
+}
+/*Margin Adjust*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /*Headers*/
 h1
 {
@@ -50,10 +58,44 @@ padding-bottom:20px;
 padding-right:20px;
 padding-left:20px;
 }
+/*Headers Merge*/
+section {
+  width: 100%;
+  padding: 50px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  height: 500px;
+  text-align: center;
+}
+/*Big Button*/
 button{
+border-radius: 15px 50px 30px;
 color: #FFFFFF;  
 background-color: #FF1493;
 text-align: center;
-width: 5000;
-height: 1000;
+font-weight: bold
+}
+.big-btn {
+    width: 100px;
+    height: 50px;
+}
+.medium-btn {
+    width: 70px;
+    height: 30px;
+}
+/*Application Interface*/
+div.design{
+display:none;
+margin: 0 auto;
+border-color: red;
+border-width:5px;	
+border-style:dotted;
+width: 400px;
+padding:20px;
+background-color:pink;
+text-align: left;
+}
+p{
+color: #9900FF;
+font-weight: bold
 }
