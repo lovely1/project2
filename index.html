@@ -4,7 +4,6 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <html lang="en-US">
-
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 <head>
 <meta charset="utf-8">
@@ -19,32 +18,44 @@
 <script type="text/javascript" src="genapp.js"></script>
 
 
-
- <!-- Header1 -->
-<div>
-<h1 class="padding">General Application</h1>
+ <!-- Headers -->
+<div class="section">
+ <h1 class="padding">General Application</h1>
+ <h2 class="padding"></h2>
+ <h3 class="padding"></h3>
+ <h4 class="padding"></h4>
 </div>
-<!-- /Header1 -->
-<!-- Header2 -->
-<div>
-<h2 class="padding"></h2>
-</div>
-<!-- /Header2 -->
-
-<!-- Header3 -->
-<div>
-<h3 class="padding"></h3>
-</div>
-<!-- /Header3 -->
-
-<!-- Header4 -->
-</div>
-<h4 class="padding"></h4>
-</div>
-<!-- /Header4-->
+<!-- /Headers-->
 </head>
 <body>
-<button>Start</button>
-  <p hidden>General application</p>
+<!-- Headers -->
+<br>
+<br>
+<br>
+<!-- Application -->
+<button class="big-btn">ON/OFF</button>
+<br>
+<br>
+ <div ng-app="myGenApp" ng-controller="myGenCtrl" class="design">
+ 
+<p hidden>Enter your information</p>
+<br>
+<br>
+<p hidden>Name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" ng-model="name" placeholder="Enter name here"></p><br>
+<p hidden>Last Name : <input type="text" ng-model="lastname" placeholder="Enter last name here"></p><br>
+<p hidden>Country :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" ng-model="country" placeholder="Enter country here"></p><br>
+
+<p hidden>Hello {{name}} {{lastname}} 
+<br>
+<br>
+    It must be nice to live in {{country}} </p>
+<br>
+<p hidden>
+<button class="medium-btn" ng-click="save()">Save</button>
+<button class="medium-btn " ng-click="clear()">Clear</button>
+</p>
+<script src="myGenApp.js"></script>
+<script src="myGenCtrl.js"></script>
+</div>
 </body>
 </html>
